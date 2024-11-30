@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700" />
+    <title>JavaScript to PHP</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        body {
+            font-family: 'Space Grotesk', 'Noto Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex flex-col min-h-screen bg-[#231c10] text-white">
+        <header class="flex items-center justify-between p-4 bg-[#342a18]">
+            <p class="text-[28px] font-bold">ConverterX Code</p>
+            <button class="flex items-center justify-center w-12 h-12 bg-transparent text-white rounded-xl hover:bg-[#f2a20d] transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"></path>
+                </svg>
+            </button>
+        </header>
+
+        <nav class="flex border-b border-[#685531] px-4 gap-8">
+            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-[#f2a20d] text-white pb-[13px] pt-[10px]" href="#">
+                <p class="text-white text-sm font-bold">JavaScript</p>
+            </a>
+            <a class="flex flex-col items-center justify-center text-white pb-[13px] pt-[10px]" href="#">
+                <p class="text-white text-sm font-bold">PHP</p>
+            </a>
+        </nav>
+
+        <main class="flex flex-col items-center justify-center flex-1 p-4">
+            <div class="flex flex-col w-full max-w-4xl p-8 rounded-lg bg-[#342a18] shadow-lg">
+                <label for="javascriptCode" class="text-lg font-bold">JavaScript Code:</label>
+                <textarea id="javascriptCode" class="h-[200px] w-full p-4 bg-transparent border border-[#685531] rounded-lg" placeholder="Type your JavaScript code here..."></textarea>
+                <button id="convertButton" class="mt-4 p-2 bg-[#f2a20d] text-[#231c10] rounded-lg hover:bg-[#c58906] transition duration-300">Convert to PHP</button>
+                <label for="phpCode" class="mt-4 text-lg font-bold">Converted to PHP code:</label>
+                <textarea id="phpCode" class="h-[200px] w-full p-4 bg-transparent border border-[#685531] rounded-lg" placeholder="Converted PHP code will appear here..." readonly></textarea>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.getElementById('convertButton').onclick = function () {
+            const jsCode = document.getElementById('javascriptCode').value;
+            let phpCode = '';
+
+            // JavaScript to PHP conversion logic
+            phpCode = jsCode
+                .replace(/var\s+(\w+)\s*=\s*(.*?);/g, '$$1 = $2;')  // var
+                .replace(/let\s+(\w+)\s*=\s*(.*?);/g, '$$1 = $2;')  // let
+                .replace(/const\s+(\w+)\s*=\s*(.*?);/g, '$$1 = $2;')  // const
+                .replace(/function\s+(\w+)\s*\((.*?)\)\s*\{/g, 'function $1($2) {') // Function declaration
+                .replace(/if\s*\((.*?)\)\s*\{/g, 'if ($1) {')  // if
+                .replace(/else\s*\{/g, '} else {')  // else
+                .replace(/switch\s*\((.*?)\)\s*\{/g, 'switch ($1) {')  // switch
+                .replace(/for\s*\((.*?)\)\s*\{/g, 'for ($1) {')  // for
+                .replace(/while\s*\((.*?)\)\s*\{/g, 'while ($1) {')  // while
+                .replace(/do\s*\{/g, 'do {')  // do
+                .replace(/console\.log\((.*?)\);/g, 'echo $1;') // console.log
+                .replace(/(\w+)\s*=\s*([^;]*);/g, '$1 = $2;'); // General assignment
+
+            // Handling arrays and objects (basic)
+            phpCode = phpCode.replace(/let\s+(\w+)\s*=\s*\[(.*?)\];/g, '$$1 = array($2);');  // Array
+            phpCode = phpCode.replace(/let\s+(\w+)\s*=\s*\{(.*?)\};/g, '$$1 = array($2);'); // Object
+
+            document.getElementById('phpCode').value = phpCode;
+        }
+    </script>
+</body>
+</html>
