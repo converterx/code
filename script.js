@@ -1,7 +1,7 @@
 document.getElementById("convertBtn").addEventListener("click", function() {
     let jsCode = document.getElementById("jsInput").value;
 
-    // Basit bir dönüştürücü fonksiyon
+    // Simple converter function
     let phpCode = jsCode
         .replace(/let|var|const/g, "$")
         .replace(/console.log/g, "echo")
@@ -10,6 +10,6 @@ document.getElementById("convertBtn").addEventListener("click", function() {
         .replace(/false/g, "false")
         .replace(/;/g, ";");
 
-    // Sonucu PHP Output alanına koy
+    // Results are shown on PHP output
     document.getElementById("phpOutput").value = "<?php\n" + phpCode + "\n?>";
 });
